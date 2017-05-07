@@ -54,8 +54,8 @@ names(subject_joined) <- "subject"
 
 # Step 7 - join all data into single dataframe
 joined_df <- cbind(x_joined, y_joined, subject_joined)
-write.table(joined_df, "joined_untidy.txt", row.names=T, quote=F)
+write.table(joined_df, "joined_untidy.txt", row.name=F, quote=F)
 
 # Step 8 - new "tidy" dataset. Get mean of each variable per-activity and per-subject.
 tidy <- ddply(joined_df, .(subject, activity), function (x) colMeans(x[, 1:66]))
-write.table(tidy, "tidy.txt", row.names=T, quote=F)
+write.table(tidy, "tidy.txt", row.name=F, quote=F)
