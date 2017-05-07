@@ -1,7 +1,11 @@
 # Coursera - Getting and Cleaning Data - Course Project
 ## Installation instructions
 
-`git clone `
+`git clone git@github.com:JoshuaGross/CourseraGettingCleaningDataCourseProj.git`
+
+## Usage
+
+`Rscript run_analysis.R`
 
 ## Review Criteria
 * The submitted data set is tidy.

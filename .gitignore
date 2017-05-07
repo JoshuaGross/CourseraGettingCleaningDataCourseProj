@@ -35,3 +35,4 @@ vignettes/*.pdf
 # Data
 UCI HAR Dataset/
 dataset.zip
+joined_untidy.txt
